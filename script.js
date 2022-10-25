@@ -1,5 +1,8 @@
+var fullText = "";
 function addFile(){
-var names = [document.getElementById("text").value];
+
+  fullText += new Date() +  document.getElementById("text").value + "\n";
+var names = [fullText];
 
 var data = new Blob(names, {type: 'text/plain'});
 
